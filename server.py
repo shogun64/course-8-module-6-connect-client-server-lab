@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Create a list called 'events' with a couple of sample event dictionaries
 # Each dictionary should have an 'id' and a 'title'
